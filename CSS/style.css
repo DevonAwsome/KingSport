@@ -1,0 +1,157 @@
+:root {
+  --font-clr1: #fcd20c;
+  --font-clr2: rgba(77, 77, 77, 0.95);
+  --bg-clr1: #fcd20c;
+  --bg-clr2: rgba(77, 73, 73, 0.95);
+}
+
+/* Global Style */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Navigation and Slider */
+
+.Slider {
+  max-width: 100vw;
+  height: 950px;
+  background: rgb(226, 26, 26);
+}
+
+
+/*  Position between Navigation and Slider */
+.Slider{
+  position: relative;
+}
+.Navigation{
+  position: absolute;
+  top: 0;
+}
+
+/*  Text Settings */
+
+.Navigation {
+  height: 138px;
+  width: 1920px;
+}
+
+.Sub-nav {
+  background: var(--bg-clr2);
+  height: 40px;
+  width: 1920px;
+}
+.Annoucement {
+  padding: 0px 240px 0px 240px;
+  text-align: center;
+}
+
+.Text1 {
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  padding: 12px 0 12px 0px;
+}
+
+.Text2 {
+  float: right;
+  line-height: 40px;
+}
+
+.Hotline-Icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 13px;
+}
+
+.bold-01 {
+  color: var(--font-clr1);
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+}
+
+.normal {
+  color: var(--font-clr1);
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Icons li {
+  list-style: none;
+}
+
+.Main-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 1920px;
+  height: 98px;
+  background: var(--bg-clr1);
+  padding: 0px 240px 0px 240px;
+}
+
+.Logo-container {
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 25px;
+}
+
+.cta {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 375px) {
+  .Sub-nav {
+    width: auto;
+    height: auto;
+    padding: 0px 13px 0px 13px;
+  }
+  .Text1 {
+    display: none;
+  }
+  .Text2 {
+    float: right;
+    display: block;
+  }
+}
